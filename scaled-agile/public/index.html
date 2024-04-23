@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.125.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<title>migrating-to-SAFe</title>
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><link rel="stylesheet" href="/reveal-js/dist/reset.css">
+<link rel="stylesheet" href="/reveal-js/dist/reveal.css"><link rel="stylesheet" href="/reveal-js/dist/theme/night.css" id="theme">
+<link rel="stylesheet" href="/highlight-js/default.min.css">
+  </head>
+  <body>
+    
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section>
+
+<section data-shortcode-section>
+<h2 id="migrating-to-scaled-agile-framework">Migrating to Scaled Agile Framework</h2>
+<p><b> (SAFe) </b></p>
+<p>An anecdotal story</p>
+<p><span style="font-size:0.5em;">By: Russ Harrington</span></p>
+
+</section>
+</section><section>
+<h2 id="outline">Outline</h2>
+<ul>
+<li>Scaled Agile Framework</li>
+<li>Project Background</li>
+<li>Migration to Agile</li>
+<li>Migration to Scaled Agile</li>
+<li>Scaled Agile Framework in Action</li>
+<li>Lessons Learned</li>
+<li>References</li>
+</ul>
+</section><section>
+<h3 id="scaled-agile-framework">Scaled Agile Framework</h3>
+<img src="Portfolio.png" />
+<a href="https://scaledagileframework.com/" target="_blank" >https://scaledagileframework.com/</a>
+</section>
+
+
+<section data-shortcode-section>
+<section data-noprocess data-shortcode-slide
+      data-background-image="far-away.jpg"
+      id="intro">
+</section>
+<section data-noprocess data-shortcode-slide
+      data-background-color="#000000"
+      data-background-image="coollogo.png"
+      data-background-size="800px"
+      id="logowars">
+</section><section>
+<h2 id="disclaimer">Disclaimer</h2>
+<p>All opinions in the following presentation are explicitly my own and do not necessarily represent the opinions of any company that I may have, or currently work for.</p>
+</section><section>
+<h2 id="project-background">Project Background</h2>
+</section>
+<section data-noprocess data-shortcode-slide
+      data-background-image="software-development.png"
+      data-background-position="right"
+      data-background-size="300px"
+      id="SIZE">
+<h3 id="project-size">Project Size</h3>
+<ul>
+<li>Incredibly large System of Systems!</li>
+<li>Thousands of engineers (Software, Systems, Test, Hardware, etc&hellip;)</li>
+<li>Dozens and dozens of customers</li>
+<li>10s of millions of lines of source code alone.</li>
+</ul>
+</section><section>
+<h3 id="why-migrate-from-waterfall">Why Migrate From Waterfall</h3>
+<ul>
+<li>The waterfall model took a year or more to get capability to the customer</li>
+<li>Incredibly expensive when finding defects during validation testing</li>
+<li>Feedback loop took too long to adapt to change in priorities</li>
+<li>Rapid Changing landscape of technology and customer needs</li>
+</ul>
+
+</section>
+</section><section>
+
+
+<section data-shortcode-section>
+<h2 id="migration-to-agile">Migration to Agile</h2>
+</section>
+<section data-noprocess data-shortcode-slide
+      data-background-image="training-icon.jpg"
+      data-background-position="right"
+      data-background-size="600px"
+      id="training">
+<h3 id="step-1-training">Step 1: Training</h3>
+<ul>
+<li>Project wide training blitz</li>
+<li>Covered agile principles and tools</li>
+<li>Full week of workshops</li>
+<li>10-20% of Engineering and Management trained per week (8 weeks total)</li>
+<li>Massive initiative requires buy-in from top down</li>
+</ul>
+</section>
+<section data-noprocess data-shortcode-slide
+      data-background-image="git-icon.png"
+      data-background-position="right"
+      data-background-size="600px"
+      id="tools">
+<h3 id="step-2-adopting-tools">Step 2: Adopting Tools</h3>
+<ul>
+<li>Jira adoption for workflow</li>
+<li>Confluence adoption for documentation</li>
+<li>Bitbucket for GitOps</li>
+<li>CI/CD tools</li>
+</ul>
+</section>
+<section data-noprocess data-shortcode-slide
+      data-background-image="diverse-team.png"
+      data-background-position="right"
+      data-background-size="600px"
+      id="team-transition">
+<h3 id="step-3-team-transitions">Step 3: Team Transitions</h3>
+<ul>
+<li>Project is grouped by functional domains</li>
+<li>Functional domain teams self-organized
+<ul>
+<li>Option to adopt Kanban or Scrum</li>
+<li>Team formation and charters</li>
+<li>DevOps or core-competencies</li>
+</ul>
+</li>
+<li>1-2 years of adoption across the project</li>
+</ul>
+</section>
+<section data-noprocess data-shortcode-slide
+      data-background-image="Question-Mark.png"
+      data-background-position="right"
+      data-background-size="600px"
+      id="now-what">
+<h3 id="now-what">Now What????</h3>
+<p>Individual teams were now planning and executing work in more agile approach</p>
+<p><span class='fragment ' >Hardly improved the speed to customer</span></p>
+<p><span class='fragment ' >Feed back loops still too long</span></p>
+<p><span class='fragment ' >Requirements still very much waterfall</span></p>
+<p><span class='fragment ' >Validation still planned for big bang deliveries</span></p>
+<p><span class='fragment ' >Teams very resistant to change, change fatigue</span></p>
+<p><span class='fragment ' ><strong>Leadership</strong> realized a more structured approach to a project of this size was needed.</span></p>
+
+</section>
+</section><section>
+
+
+<section data-shortcode-section>
+<h2 id="migration-to-scaled-agile">Migration to Scaled Agile</h2>
+</section>
+<section data-noprocess data-shortcode-slide
+      data-background-image="diverse-team.png"
+      data-background-position="right"
+      data-background-size="600px"
+      id="first-release">
+<h3 id="team-re-organization-and-first-few-releases">Team Re-Organization and First Few Releases</h3>
+<span style="font-size:0.8em;">
+<p><span class='fragment ' >- Still domain driven teams but organized into DevOps like teams</span></p>
+<p><span class='fragment ' >- Each domain appointed a Release Train Engineer</span></p>
+<p><span class='fragment ' >- Coordinated 2 week sprints across all teams</span></p>
+<p><span class='fragment ' >- Release planning events established</span></p>
+<p><span class='fragment ' >  - 3 month releases</span></p>
+<p><span class='fragment ' >  - Backlog established for 6 months</span></p>
+<p><span class='fragment ' >  - All sprints planned to 80% capacity</span></p>
+<p><span class='fragment ' >- Stakeholder buy-in on team plans</span></p>
+<p><span class='fragment ' >- Cross team dependency boards</span></p>
+</span>
+</section>
+<section data-noprocess data-shortcode-slide
+      data-background-image="Question-Mark.png"
+      data-background-position="right"
+      data-background-size="800px"
+      id="reflection">
+<h3 id="time-for-reflection">Time for Reflection</h3>
+<p><span class='fragment ' >- Process still too rigid for changing priorities</span></p>
+<p><span class='fragment ' >- Impossible for stakeholders to attend all individual team demos</span></p>
+<p><span class='fragment ' >- Lots of fall-over due to capacity planning</span></p>
+<p><span class='fragment ' >- Teams still not bought in</span></p>
+</section>
+<section data-noprocess data-shortcode-slide
+      data-background-image="diverse-team.png"
+      data-background-position="right"
+      data-background-size="600px"
+      id="round-2">
+<h3 id="round-2-electric-boogaloo-or-great-success">Round 2: Electric Boogaloo or Great Success?</h3>
+<span style="font-size:0.9em;">
+<p><span class='fragment ' >- Sprint planning only to the next few sprints</span></p>
+<p><span class='fragment ' >- Continual backlog refinement</span></p>
+<p><span class='fragment ' >- Combined team demos</span></p>
+<p><span class='fragment ' >- RTE coordination events stood up</span></p>
+<p><span class='fragment ' >- Customer coordination events to agree on priorities</span></p>
+<p><span class='fragment ' >- Coordinated requirements and development</span></p>
+<p><span class='fragment ' >  - Just in time requirements where applicable</span></p>
+<p><span class='fragment ' >  - Capability threads as opposed to full delivery</span></p>
+</span>
+</section>
+<section data-noprocess data-shortcode-slide
+      data-background-image="Question-Mark.png"
+      data-background-position="right"
+      data-background-size="800px"
+      id="reflection-2">
+<h3 id="reflection-on-round-2">Reflection on Round 2</h3>
+<p><span class='fragment ' >- Teams able to complete more of planned scope</span></p>
+<p><span class='fragment ' >- Still need to incorporate validation in team activity</span></p>
+<p><span class='fragment ' >- More awareness across both teams and customers</span></p>
+<p><span class='fragment ' >- Priority shifting still causing churn</span></p>
+<p><span class='fragment ' >  - Invisible or Unplanned Work</span></p>
+<p><span class='fragment ' >  - Popup still a killer</span></p>
+<p><span class='fragment ' >- Reoccurring events (test event support) does not fit well into sprints</span></p>
+</section>
+<section data-noprocess data-shortcode-slide
+      data-background-image="diverse-team.png"
+      data-background-position="right"
+      data-background-size="600px"
+      id="round-n">
+<h3 id="round-n-continual-learning">Round N: Continual Learning</h3>
+<p><span class='fragment ' >- Project wide retrospective collections</span></p>
+<p><span class='fragment ' >- Evolution and Technology teams</span></p>
+<p><span class='fragment ' >- Even more coordination</span></p>
+<p><span class='fragment ' >- Continual trim of unnecessary process</span></p>
+<p><span class='fragment ' >- Less rigid releases, reduce release time</span></p>
+<p><span class='fragment ' >- Validation built into release cycle (shift left)</span></p>
+<p><span class='fragment ' >- Evolution of the release train</span></p>
+</section><section>
+<h3 id="how-scaled-agile-fits">How Scaled Agile Fits</h3>
+<p><span class='fragment ' >- Promotes continuous learning</span></p>
+<p><span class='fragment ' >- Well groomed domain backlogs across the entire project</span></p>
+<p><span class='fragment ' >- Continuous releases, full project release 12+ times a year</span></p>
+<p><span class='fragment ' >- Agile across all engineering disciplines</span></p>
+<p><span class='fragment ' >- Support from coaches</span></p>
+<p><span class='fragment ' >- Engagement with customer across whole product lifecycle</span></p>
+
+</section>
+</section><section>
+
+
+<section data-shortcode-section>
+<h2 id="lessons-learned">Lessons Learned</h2>
+</section>
+<section data-noprocess data-shortcode-slide
+      data-background-image="contemplation2.png"
+      data-background-position="right"
+      data-background-size="600px"
+      id="change">
+<h3 id="change-is-hard">Change Is Hard</h3>
+<p><span class='fragment ' >- Develop a change management plan</span></p>
+<p><span class='fragment ' >- Avoid change fatigue</span></p>
+<p><span class='fragment ' >- Need to accept that it may not go well at first</span></p>
+<p><span class='fragment ' >- Leadership buy-in is essential</span></p>
+<p><span class='fragment ' >- This may be a culture change!</span></p>
+</section>
+<section data-noprocess data-shortcode-slide
+      data-background-image="incremental.png"
+      data-background-position="right"
+      data-background-size="600px"
+      id="incremental">
+<h3 id="incremental-progress">Incremental Progress</h3>
+<p><span class='fragment ' >- Don’t try to big bang SAFe</span></p>
+<p><span class='fragment ' >- Make small changes at first</span></p>
+<p><span class='fragment ' >- Focus on continual learning</span></p>
+<p><span class='fragment ' >- Start with teams, and keep them healthy</span></p>
+</section>
+<section data-noprocess data-shortcode-slide
+      data-background-image="incremental.png"
+      data-background-position="right"
+      data-background-size="600px"
+      id="framework-approach">
+<h3 id="framework-approach">Framework Approach</h3>
+<p><span class='fragment ' >- SAFe can be a very large scale approach, find what fits and adapt</span></p>
+<p><span class='fragment ' >- Focus on value, eliminate waste</span></p>
+<p><span class='fragment ' >- Its more than just software development</span></p>
+<p><span class='fragment ' >- Use established tools, don’t re-invent the wheel</span></p>
+</section>
+<section data-noprocess data-shortcode-slide
+      data-background-image="value-stream.png"
+      data-background-position="right"
+      data-background-size="500px"
+      id="benefits">
+<h3 id="benefits">Benefits</h3>
+<p><span class='fragment ' >- Once the kinks are worked out, it really shines</span></p>
+<p><span class='fragment ' >- It is a culture change tool</span></p>
+<p><span class='fragment ' >- For large projects this can be a huge enabler</span></p>
+<p><span class='fragment ' >- Visibility across the whole project</span></p>
+<p><span class='fragment ' >- Constant value mapping of the process, eliminates waste</span></p>
+<p><span class='fragment ' >- Has workflows and resources for all things agile</span></p>
+
+</section>
+</section>
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="yoda.png"
+      data-background-position="center"
+      data-background-size="500px"
+      id="thanks">
+  
+<h2 id="thank-you">Thank you</h2>
+<p><br><br><br><br><br><br><br><br><br></p>
+</section>
+
+  
+
+
+</div>
+      
+
+    </div>
+<script type="text/javascript" src=/reveal-hugo/object-assign.js></script>
+
+
+<script src="/reveal-js/dist/reveal.js"></script>
+
+
+  <script type="text/javascript" src="/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/reveal-js/plugin/zoom/zoom.js"></script>
+  
+  <script type="text/javascript" src="/reveal-js/plugin/notes/notes.js"></script>
+  
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = {};
+  var revealHugoPageParams = {"margin":0.2,"theme":"night","transition":"slide","transition_speed":"fast"};
+
+  var revealHugoPlugins = {
+    
+    plugins: [RevealMarkdown,RevealHighlight,RevealZoom,RevealNotes]
+  };
+
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams),
+    camelize(revealHugoPlugins));
+
+  Reveal.initialize(options);
+</script>
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+    
+    
+  </body>
+</html>
